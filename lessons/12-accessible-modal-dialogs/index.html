@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Accessible Modal Dialogs</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="node_modules\dialog-polyfill\dist\dialog-polyfill.js">
+</head>
+<body>
+		<div class="wrapper">
+				<ul class="skip-links">
+					<li><a href="#global-nav">Skip to navigation</a></li>
+					<li><a href="#main">Skip to content</a></li>
+					<li><a href="#footer">Skip to footer</a></li>
+				</ul>
+				<header role="banner" id="global-nav" tabindex="-1">
+
+				</header>
+				<main role="main" id="main" tabindex="-1">
+					<h1>Homepage</h1>
+					<h2><a href="#">Article Title</a></h2>
+
+					<button id="dialogTrigger">Open dialog</button>
+				</main>
+				<footer role="contentinfo" id="footer" tabindex="-1">
+
+				</footer>
+	</div>
+
+	<dialog aria-labelledby="dialogHeading">
+		<h2 id="dialogHeading">Dialog Title</h2>
+		<button id="closeBtn">Close</button>
+	<dialog>
+
+	<script src="node_modules/dialog-polyfill/dist/dialog-polyfill.js"></script>
+	<script src="node_modules/wicg-inert/dist/inert.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

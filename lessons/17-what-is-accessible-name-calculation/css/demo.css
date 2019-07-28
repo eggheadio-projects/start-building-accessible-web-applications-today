@@ -1,0 +1,25 @@
+* {
+  font-family: sans-serif;
+}
+live-region {
+  border: 1px solid #000;
+  display: block;
+  margin: 1em 0;
+  min-height: 2.5em;
+  padding-top: 2px;
+
+  &:before {
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    content: attr(role) ":";
+    padding: 2px;
+  }
+  p {
+    margin-left: 2px;
+  }
+}
+button {
+  background-color: #ccc;
+  border: none;
+  font-weight: bold;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "12-accessible-modal-dialogs",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "dialog-polyfill": "^0.5.0",
+    "wicg-inert": "^2.1.2"
+  }
+}

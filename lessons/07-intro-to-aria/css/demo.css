@@ -1,0 +1,23 @@
+button, .button, custom-button {
+	background-color: buttonface;
+  border: 2px outset buttonface;
+  box-sizing: border-box;
+	display: inline-block;
+  font-family: sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	height: 2em;
+	line-height: 2em;
+  padding: 3px 6px 6px;
+  margin: 1em 0;
+	vertical-align: middle;
+	-webkit-appearance: button;
+}
+custom-button[aria-label="Close"]:before {
+	content: 'X';
+	display: block;
+}
+custom-button[aria-disabled="true"] {
+	color: graytext;
+	pointer-events: false;
+}

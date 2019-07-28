@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Accessible Name Calculation</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+<body>
+    <h1>Accessible Name Calculation Demo</h1>
+
+    <form class="search">
+        <input aria-labelledby="search-button" />
+        <button id="search-button">
+            <span aria-hidden="true" class="icon icon-search"></span>
+            <span class="visuallyhidden">Search</span>
+        </button>
+    </form>
+
+    <p>
+        <a href="#" aria-labelledby="readmore1 readMoreLabel1">
+            <span id="readmore1">Read more</span>
+            <span id="readMoreLabel1" class="visuallyhidden"> articles about cute animals</span>
+        </a>
+    </p>
+
+    <dialog open role="dialog" aria-label="Newsletter sign up">
+        <custom-button role="button" tabindex="0" aria-label="Cancel" aria-describedby="cancelNote">
+            X
+        </custom-button>
+        <fieldset>
+            <legend>
+                <h2>Sign up your favorite friends for our newsletter!</h2>
+            </legend>
+            <div>
+                <label for="dogs">Dog</label>
+                <input type="text" id="dogs" name="dogs" />
+            </div>
+
+            <div>
+                <label for="cats">
+                    Cat
+                    <input type="text" id="cats" name="cats" />
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Who else?
+                    <input type="text" placeholder="e.g. Frank the Lizard" name="superfriends" />
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </fieldset>
+        <p id="cancelNote">Closing this dialog will cancel your submission.</p>
+    </dialog>
+</body>
+</html>

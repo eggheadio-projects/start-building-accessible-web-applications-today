@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title>Button Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+<body ng-app="demoApp" ng-controller="demoController">
+	<main>
+		<button aria-label="Help" ng-click="doStuff()">
+			<i class="icon icon-help"></i>
+		</button>
+
+		<div class="button" role="button" tabindex="0" aria-label="Menu" ng-click="doStuff()" ng-keydown="doStuff()">
+			<i class="icon icon-menu"></i>
+		</div>
+  </main>
+
+  <script src="lib/angular.js"></script>
+  <script src="demo.js"></script>
+</body>
+</html>

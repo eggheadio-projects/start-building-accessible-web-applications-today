@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <title>Focus management</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div>
+      <ul class="skip-links">
+        <li><a href="#main">Main content</a></li>
+        <li><a href="#footer">Global footer</a></li>
+      </ul>
+      <header role="banner">
+      	<h1>Focus Management</h1>
+      </header>
+      <main role="main" id="main" tabindex="-1">
+      	<h2>Main content</h2>
+      	<p><a href="#">A link</a>.</p>
+      	<ul class="list">
+      		<li>
+      			Item 1 <button class="btn-delete" aria-label="Delete Item 1"></button>
+      		</li>
+      		<li>
+      			Item 2 <button class="btn-delete" aria-label="Delete Item 2"></button>
+      		</li>
+      		<li>
+      			Item 3 <button class="btn-delete" aria-label="Delete Item 3"></button>
+      		</li>
+      	</ul>
+      </main>
+      <footer role="contentinfo" id="footer" tabindex="-1">
+    	  <p>&copy; 2016 Rainier McCheddarton. <a href="#">About Us</a></p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

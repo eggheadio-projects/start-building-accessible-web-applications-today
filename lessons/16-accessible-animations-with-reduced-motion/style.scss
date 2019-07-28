@@ -1,0 +1,86 @@
+button#animation-toggle {
+  background-color: black;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+#animation-target {
+  border: 1px solid;
+  height: 400px;
+  margin-bottom: 1em;
+  overflow: hidden;
+  position: relative;
+  width: 600px;
+}
+.pulse {
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 30rem;
+
+	circle {
+		fill: #ff5154;
+		transform: scale(0);
+		opacity: 0.4;
+		transform-origin: 50% 50%;
+		animation: pulse 2.5s cubic-bezier(.5,.5,0,1) infinite;
+
+		&:nth-child(2) {
+			fill: #7fc6a4;
+			animation: pulse 2.5s 0.75s cubic-bezier(.5,.5,0,1) infinite;
+		}
+
+		&:nth-child(3) {
+			fill: #e5f77d;
+			animation: pulse 2.5s 1.5s cubic-bezier(.5,.5,0,1) infinite;
+		}
+
+	}
+
+}
+
+@keyframes pulse {
+	25% {
+		opacity: 0.4;
+	}
+
+	100% {
+		transform: scale(1);
+    opacity: 0;
+	}
+}
+
+@mixin noAnimate {
+  .pulse, circle {
+    animation: none !important;
+  }
+  .pulse circle {
+    opacity: 0.75;
+    transform: scale(0.25);
+  }
+  .pulse circle:nth-child(2) {
+    opacity: 0.25;
+    transform: scale(0.75);
+  }
+  .pulse circle:nth-child(3) {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+}
+.no-animate {
+  @include noAnimate;
+}
+
+/* if reduced-motion is selected on OSX/iOS */
+@media (prefers-reduced-motion) {
+  /* hide toggle button */
+  #animation-toggle {
+    display: none;
+  }
+  /* make sure animations actually stop */
+  @include noAnimate;
+}
