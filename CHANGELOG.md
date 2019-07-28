@@ -19,6 +19,8 @@ All notable changes to "Start Building Accessible Web Applications Today” will
 
 ### Changed
 
+- Changed `dialog-polyfill#0.4.5->0.5.0`.
+- Changed `wicg-inert#1.1.0->2.1.2`.
 - Corrected both file paths in lesson 12 for the scripts imported. First script changed: `<script src="node_modules/dialog-polyfill/dialog-polyfill.js"></script>` -> `<script src="node_modules/dialog-polyfill/dist/dialog-polyfill.js"></script>`. Second script changed: `<script src="node_modules/wicg-inert/inert.js"></script>` -> `<script src="node_modules/wicg-inert/dist/inert.js"></script>`.
 - Changed `scripts.js` in lesson 12 to match lesson's code, as it was simply incorrect.
 
