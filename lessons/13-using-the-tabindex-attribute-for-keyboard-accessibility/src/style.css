@@ -1,0 +1,12 @@
+* {
+  font-family: sans-serif;
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: auto;
+  padding: 1em;
+  -webkit-appearance: none;
+}

@@ -1,7 +1,8 @@
 {
-  "name": "08-how-visible-vs-hidden-elements-affect-keyboard-screen-reader-users",
+  "name": "08-how-visible-vs-hidden-elements-affect-keyboard-screen",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-  }
+  "dependencies": {},
+  "keywords": [],
+  "description": ""
 }

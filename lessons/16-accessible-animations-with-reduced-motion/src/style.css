@@ -49,7 +49,8 @@ button#animation-toggle {
     opacity: 0;
   }
 }
-.no-animate .pulse, .no-animate circle {
+.no-animate .pulse,
+.no-animate circle {
   animation: none !important;
 }
 .no-animate .pulse circle {
@@ -73,7 +74,8 @@ button#animation-toggle {
   }
 
   /* make sure animations actually stop */
-  .pulse, circle {
+  .pulse,
+  circle {
     animation: none !important;
   }
 
