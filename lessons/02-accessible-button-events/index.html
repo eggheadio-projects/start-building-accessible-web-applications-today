@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-	<title>Button Demo</title>
-	<link rel="stylesheet" type="text/css" href="css/demo.css">
+<html lang="en" <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Button Demo</title>
+<link rel="stylesheet" type="text/css" href="src/styles.css" />
+<script src="./src/index.js"></script>
 </head>
-<body ng-app="demoApp" ng-controller="demoController">
+
+<body id="root" ng-app="demoApp" ng-controller="demoController">
 	<main>
 		<button aria-label="Help" ng-click="doStuff()">
 			<i class="icon icon-help"></i>
@@ -16,9 +16,7 @@
 		<div class="button" role="button" tabindex="0" aria-label="Menu" ng-click="doStuff()" ng-keydown="doStuff()">
 			<i class="icon icon-menu"></i>
 		</div>
-  </main>
-
-  <script src="lib/angular.js"></script>
-  <script src="demo.js"></script>
+	</main>
 </body>
+
 </html>
