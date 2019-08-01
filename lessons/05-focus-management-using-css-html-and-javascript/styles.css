@@ -1,0 +1,47 @@
+* {
+  font-family: sans-serif;
+}
+ul.list {
+  padding: 0;
+}
+ul.list li {
+  border: 1px solid #ccc;
+  border-width: 1px 1px 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+}
+ul.list li:last-child {
+  border-bottom-width: 1px;
+}
+.btn-delete {
+  background-color: #ddd;
+  border: none;
+  margin-left: auto;
+  padding: 1em;
+  -webkit-appearance: none;
+}
+.btn-delete:before {
+  content: "X";
+  display: block;
+  font-weight: bold;
+}
+
+[tabindex="-1"] {
+  outline: 0;
+}
+ul.skip-links {
+  list-style: none;
+  position: absolute;
+}
+ul.skip-links a {
+  background-color: #fff;
+  display: block;
+  left: -999999px;
+  padding: 1em;
+  position: absolute;
+}
+ul.skip-links a:focus {
+  left: 0;
+}
