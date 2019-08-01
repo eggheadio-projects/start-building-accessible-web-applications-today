@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Intro to ARIA</title>
-	<link rel="stylesheet" type="text/css" href="css/demo.css">
-</head>
-<body>
-	<form action="">
+  <head>
+    <title>Intro to ARIA</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  </head>
+  <body>
+    <form action="">
+      <button disabled>button</button>
+    </form>
 
-		<button disabled>button</button>
-	</form>
-
-    <custom-button role="button" tabindex="0" aria-label="Close" aria-disabled="true"></custom-button>
-</body>
+    <custom-button
+      role="button"
+      tabindex="0"
+      aria-label="Close"
+      aria-disabled="true"
+    ></custom-button>
+  </body>
 </html>

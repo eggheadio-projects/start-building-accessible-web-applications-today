@@ -2,6 +2,7 @@
   "name": "07-intro-to-aria",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-  }
+  "dependencies": {},
+  "keywords": [],
+  "description": ""
 }
